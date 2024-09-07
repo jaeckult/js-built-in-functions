@@ -1,0 +1,126 @@
+const arr= [1, 2, 3, 4, 5]
+
+arr.push(7)
+Adds the element 7 to the end of the array.
+Result: [1, 2, 3, 4, 5, 7]
+Explanation: push() adds one or more elements to the end of the array.
+
+arr.pop()
+Removes the last element from the array.
+Result: [1, 2, 3, 4, 5]
+Explanation: pop() removes the last element and returns it.
+
+arr.shift()
+Removes the first element from the array.
+Result: [2, 3, 4, 5]
+Explanation: shift() removes the first element of the array.
+
+arr.unshift(0)
+Adds 0 to the beginning of the array.
+Result: [0, 2, 3, 4, 5]
+Explanation: unshift() adds one or more elements to the beginning of the array.
+
+arr.concat([6, 7])
+Combines the array with [6, 7] and returns a new array.
+Result: [0, 2, 3, 4, 5, 6, 7]
+Explanation: concat() merges arrays and returns a new array without modifying the original.
+
+arr.slice(1, 3)
+Extracts elements from index 1 to 3 (not inclusive).
+Result: [2, 3]
+Explanation: slice() returns a shallow copy of a portion of the array.
+
+arr.splice(1, 2)
+Removes 2 elements starting from index 1.
+Result: [0, 4, 5]
+Explanation: splice() modifies the array by removing or adding elements.
+
+arr.reverse()
+Reverses the order of the array.
+Result: [5, 4, 0]
+Explanation: reverse() reverses the order of the elements in the array.
+
+arr.sort()
+Sorts the elements (in ascending lexicographic order by default).
+Result: [0, 4, 5]
+Explanation: sort() sorts the elements. For numbers, it needs a comparison function to sort numerically.
+
+arr.indexOf(4)
+Finds the index of the first occurrence of 4.
+Result: 1
+Explanation: indexOf() returns the first index of the specified value, or -1 if it's not found.
+
+arr.includes(3)
+Checks if the array contains the value 3.
+Result: false
+Explanation: includes() checks if an element is present in the array.
+
+arr.find(x => x > 3)
+Returns the first element greater than 3.
+Result: 4
+Explanation: find() returns the first element that satisfies the provided testing function.
+
+arr.filter(x => x > 3)
+Returns all elements greater than 3.
+Result: [4, 5]
+Explanation: filter() returns a new array containing all elements that pass the test.
+
+arr.map(x => x * 2)
+Multiplies every element by 2.
+Result: [0, 8, 10]
+Explanation: map() creates a new array populated with the results of applying a function to every element.
+
+arr.reduce((sum, x) => sum + x, 0)
+Sums all elements starting from an initial value of 0.
+Result: 9
+Explanation: reduce() applies a function against an accumulator and each element in the array to reduce it to a single value.
+
+arr.join('-')
+Joins all elements into a string, separated by '-'.
+Result: "0-4-5"
+Explanation: join() joins all elements of an array into a string.
+
+arr.every(x => x > 2)
+Checks if every element is greater than 2
+Result: false
+Explanation: every() tests whether all elements pass the test provided by a function.
+
+arr.some(x => x > 2)
+Checks if at least one element is greater than 2.
+Result: true
+Explanation: some() tests whether at least one element passes the test provided by a function.
+
+arr.findIndex(x => x > 4)
+Finds the index of the first element greater than 4.
+Result: 2
+Explanation: findIndex() returns the index of the first element that satisfies the test function.
+
+arr.fill(9)
+Fills the array with 9.
+Result: [9, 9, 9]
+Explanation: fill() fills all elements in the array with a static value.
+
+arr.copyWithin(0, 1)
+Copies part of the array (from index 1 onward) to index 0.
+Result: [9, 9, 9]
+Explanation: copyWithin() copies a part of the array to another location in the same array.
+
+arr.flatMap(x => [x, x * 2])
+Maps each element to an array and flattens the result.
+Result: [9, 18, 9, 18, 9, 18]
+Explanation: flatMap() maps each element to a function and flattens the result into a new array.
+
+arr.entries()
+Returns an iterator of key/value pairs.
+Result: Array Iterator { [0, 9], [1, 9], [2, 9] }
+Explanation: entries() returns an iterator object that contains key-value pairs for each index.
+
+arr.keys()
+Returns an iterator for the keys (indices) of the array.
+Result: Array Iterator { 0, 1, 2 }
+Explanation: keys() returns an iterator object containing the keys (indices).
+
+arr.values()
+Returns an iterator for the values in the array.
+Result: Array Iterator { 9, 9, 9 }
+Explanation: values() returns an iterator object containing the values.
